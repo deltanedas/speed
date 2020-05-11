@@ -1,0 +1,8 @@
+{
+	"name": "speed",
+	"displayName": "[#00aaff]Speed",
+	"author": "DeltaNedas",
+	"description": "Adds a speedometer.",
+	"version": "1.0.0",
+	"hidden": true
+}
