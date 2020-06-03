@@ -1,3 +1,5 @@
+var ui = require("ui-lib/library");
+
 var last = 0;
 
 const speed = () => {
@@ -7,19 +9,6 @@ const speed = () => {
 	return "Speed: " + Math.floor(avg);
 };
 
-// Prevent adding multiple speedometers
-if (!this.global.speedometer) {
-	this.global.speedometer = true;
-
-	Events.on(EventType.ClientLoadEvent, run(e => {
-		const speedometer = new Table();
-		speedometer.setFillParent(true);
-		speedometer.label(prov(speed));
-		speedometer.visible(boolp(() => Vars.state.state == GameState.State.playing));
-		speedometer.defaults().width(80).height(50);
-		speedometer.margin(4).top().left();
-		speedometer.marginTop(200).marginLeft(20);
-
-		Core.scene.add(speedometer);
-	}));
-}
+ui.addTable("side", "speedometer", table => {
+	table.label(prov(speed));
+});

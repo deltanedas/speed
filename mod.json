@@ -2,7 +2,8 @@
 	"name": "speed",
 	"displayName": "[#00aaff]Speed",
 	"author": "DeltaNedas",
-	"description": "Adds a speedometer.",
-	"version": "1.0.0",
+	"description": "Adds a speedometer.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[]",
+	"version": "1.1.0",
+	"dependencies": ["ui-lib"],
 	"hidden": true
 }
