@@ -3,7 +3,7 @@
 	"displayName": "[#00aaff]Speed",
 	"author": "DeltaNedas",
 	"description": "Adds a speedometer.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[]",
-	"version": "2.1.1",
+	"version": "2.2.0",
 	"dependencies": ["ui-lib"],
 	"hidden": true,
 	"minGameVersion": 105
