@@ -1,8 +1,7 @@
 const ui = require("ui-lib/library");
 
 const speed = () => {
-	const speed = Vars.player.unit().vel.len();
-	return "Speed: " + Math.floor(speed);
+	return "Speed: " + Math.floor(Vars.player.unit().realSpeed());
 };
 
 ui.addTable("side", "speedometer", table => {
